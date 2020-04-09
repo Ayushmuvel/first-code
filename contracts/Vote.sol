@@ -115,8 +115,9 @@ contract Vote {
         address winner_address;
         uint _tied_between = 0 ;
         uint _vote_count;
+        uint i;
         // finding the winner
-        for (uint i = 1 ; i <= candidate_count ;i++){
+        for ( i = 1 ; i <= candidate_count ;i++){
 
              _vote_count = standing_candidates[candidate_list[i]].Vote_Count;
 
@@ -127,7 +128,7 @@ contract Vote {
 
         }
         //finding if there are more then one winner
-        for (uint i = 1 ; i <= candidate_count ;i++){
+        for ( i = 1 ; i <= candidate_count ;i++){
 
             _vote_count = standing_candidates[candidate_list[i]].Vote_Count;
 
