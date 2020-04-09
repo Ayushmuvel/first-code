@@ -145,7 +145,7 @@ contract Vote {
         }
         else {
             //displaying the number of candidate who have same no of vote
-            return ("Elction is tied between",_tied_between);
+            return ("Election is tied between",_tied_between);
         }
 
     }
