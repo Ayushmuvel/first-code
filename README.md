@@ -1,3 +1,4 @@
+This steps are for contract name vote.
 The whole contract work in several steps:
 1)	The contract is initialization by the chairperson Account and using the same account voters and candidates are added using add_voter and add_candidate respectively. In add_voter function bool type variable _elegiable is to give permission to any user for voting.
 2)	Then the function start_voting is use to start and stop voting process. By using true and false value to start and stop voting respectively.
