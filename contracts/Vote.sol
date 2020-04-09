@@ -1,48 +1,6 @@
 pragma solidity >=0.4.0 <0.7.0;
 
 contract Vote {
-    /*
-    struct Voter {
-        uint weight;
-        bool voted;
-        address delegate;
-        uint vote;
-    }
-
-    struct Personal {
-        bytes32 name;
-        uint vote_Count;
-    }
-
-    address chairperson;
-
-    mapping (address => Voter) public voters;
-
-    Personal [] public persons;
-
-    constructor (bytes32[] memory personalnames) public{
-        chairperson == msg.sender;
-        voters[chairperson].weight = 1 ;
-        for (uint i = 0 ; i< personalnames.length; i++){
-            persons.push(Personal({
-                name:personalnames[i],
-                vote_Count : 0
-            }));
-        }
-
-    }
-
-    function giverighttovote(address _Voter) public {
-        require(msg.sender == chairperson,'only chairperson can allow person to vote');
-        require(!voters[_Voter].voted,'you allready voted');
-
-        require(voters[_Voter].weight == 0);
-        voters[_Voter].weight = 1;
-
-    }
-
-    */
-
     address chairperson;
     bool voting = false;
     uint voting_count = 1;
